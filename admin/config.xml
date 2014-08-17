@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config>
+    <fieldset name="rideout_settings"
+              label="COM_RIDEOUT_CONFIG_SETTINGS">
+        <field name="rideout_first_weekday"
+               type= "radio"
+               label="COM_RIDEOUT_CONFIG_FIRST_WEEKDAY"
+               default="0">
+            <option value="0">MONDAY</option>
+            <option value="1">SUNDAY</option>
+        </field>
+        <field name="rideout_nr_of_months"
+               type= "radio"
+               label="COM_RIDEOUT_CONFIG_NR_OF_MONTHS"
+               default="2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="12">12</option>
+        </field>
+        <field name="rideout_unit"
+               type= "radio"
+               label="COM_RIDEOUT_CONFIG_UNIT_OF_MEASURE"
+               default="Km">
+            <option value="Km">Km</option>
+            <option value="Mi">Miles</option>
+        </field>
+    </fieldset>
+</config>

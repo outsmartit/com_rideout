@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+** *****************************************************************************
+ * 
+ * @package     : rideout
+ * @subpackage  : frontend view
+ * @contact     : www.outsmartit.be
+ * 
+ * @copyright Copyright(C)2013 Diederik. All rights reserved. 
+ * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * 
+ *
+-->
+
+
+<metadata> 
+<layout title="Calendar view of Bike rides"></layout>
+</metadata>
+    
+    
+

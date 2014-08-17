@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="My bike rides List (Stylish)">
+        <message>MyRides List with additional CSS</message>
+    </layout>
+
+    <fields name="params">
+        <fieldset name="order"
+                          label="COM_RIDEOUT_ORDER_OPTIONS">
+            <field name="orderdir"
+                               type="list"
+                               default=""
+                               label="COM_RIDEOUT_ORDERDIR_LABEL">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="ASC">COM_RIDEOUT_OPTION_ASC</option>
+                <option value="DESC">COM_RIDEOUT_OPTION_DESC</option>
+            </field>
+            <field name="ordercol"
+                               type="list"
+                               default=""
+                               label="COM_RIDEOUT_ORDERCOL_LABEL">
+                <option value="">JGLOBAL_USE_GLOBAL</option>
+                <option value="title">COM_RIDEOUT_TITLE_LABEL</option>
+                <option value="category_id">COM_RIDEOUT_CAT_LABEL</option>
+                <option value="submitter">COM_RIDEOUT_SUBMITTER_LABEL</option>
+                <option value="date_in">COM_RIDEOUT_DATE_IN_LABEL</option>
+            </field>
+        </fieldset>
+        <fieldset name="Ideas filter" label="COM_RIDEOUT_FILTER_OPTIONS">
+            <field name="statusfilter"
+                           type="list"
+                           default=""
+                           label="COM_RIDEOUT_LISTFILTER_LABEL">
+                <option value="0">ALL Ideas</option>
+                <option value="1">Nieuw</option>
+                <option value="2">Goedgekeurd</option>
+                <option value="3">Implementatie</option>
+                <option value="5">Afgewerkt</option>
+                <option value="9">Verworpen</option>
+            </field>
+        </fieldset>
+                
+    </fields>
+</metadata>

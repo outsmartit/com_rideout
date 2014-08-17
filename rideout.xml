@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_rideout</name>
+    <creationDate>2014-02-20</creationDate>
+    <author>Diederik</author>
+    <authorEmail>info@outsmartit.be</authorEmail>
+    <authorUrl>http://www.outsmartit.be</authorUrl>
+    <copyright>Copyright Info</copyright>
+    <license>GNU/GPL</license>
+    <version>0.1</version>
+    <description>COM_RIDEOUT_XML_DESCRIPTION</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.sql</file> 
+            <file driver="mysqli" charset="utf8">sql/install.sql</file> 
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.sql</file> 
+            <file driver="mysqli" charset="utf8">sql/uninstall.sql</file> 
+        </sql>
+    </uninstall>
+    <files folder="site">
+        <folder>controllers</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>helpers</folder>
+        <filename>controller.php</filename>
+        <filename>rideout.php</filename>
+        <filename>index.html</filename>
+    </files>
+    <languages folder="site">
+        <language tag="en-GB">language/en-GB/en-GB.com_rideout.ini</language>
+    </languages>
+    <administration>
+        <submenu>
+            <menu link="option=com_categories&amp;extension=com_rideout"
+                  view="categories" alt="rideout/Categories">Categories
+            </menu>
+        </submenu>
+        <files folder="admin">
+            <filename>controller.php</filename>
+            <filename>rideout.php</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <folder>controllers</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">language/en-GB/en-GB.com_rideout.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_rideout.sys.ini</language>
+            <language tag="de-DE">language/de-DE/de-DE.com_rideout.ini</language>
+            <language tag="nl-NL">language/nl-NL/nl-NL.com_rideout.ini</language>
+        </languages>
+    </administration>
+</extension>

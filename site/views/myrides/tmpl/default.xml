@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+* * *****************************************************************************
+ * 
+ * @package     : rideout
+ * @subpackage  : frontend view
+ * @contact     : www.outsmartit.be
+ * 
+ * @copyright Copyright(C)2014 Outsmartit.be. All rights reserved. 
+ * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * 
+ *
+-->
+<metadata> 
+    <layout title="List of my bike rides"></layout>
+    <fields name="params">
+        <fieldset name="reach"
+                  label="COM_RIDEOUT_LIST_OPTIONS_LABEL">
+            <field name="reach"
+                   type="list"
+                   default="Upcoming"
+                   label="COM_RIDEOUT_REACH_LABEL">
+                <option value="Upcoming">COM_RIDEOUT_OPTION_UPCOMING</option>
+                <option value="Next">COM_RIDEOUT_OPTION_NEXT</option>
+                <option value="Current">COM_RIDEOUT_OPTION_CURRENT</option>
+                <option value="Window">COM_RIDEOUT_OPTION_WINDOW</option>
+                <option value="All">COM_RIDEOUT_OPTION_ALL</option>
+            </field>
+            <field name="note1" type="note" label="COM_RIDEOUT_WINDOW_SETTING" description="COM_RIDEOUT_WINDOW_SETTING_DESC" />      
+            <field name="start"
+                   type="integer"
+                   default=""
+                   first="0" 
+                   last="3" 
+                   step="1"
+                   label="COM_RIDEOUT_START_LABEL" />
+            <field name="end"
+                   type="integer"
+                   default=""
+                   first="1" 
+                   last="12" 
+                   step="1"
+                   label="COM_RIDEOUT_END_LABEL" />
+            <field name="note2" type="note" label="COM_RIDEOUT_NEXT_SETTING" description="COM_RIDEOUT_NEXT_SETTING_DESC" />
+            <field name="nr_of_events"
+                       type="integer"
+                       default=""
+                       first="5" 
+                       last="25" 
+                       step="5"
+                       label="COM_RIDEOUT_NR_EVENTS_LABEL" />
+            <field name="note3" type="note" label="COM_RIDEOUT_CATEGORY_SELECTION" description="COM_RIDEOUT_CATEGORY_SELECTION_DESC" />
+            <field
+                name="category_select"
+                type="radio"
+                class="btn-group"
+                label="COM_RIDEOUT_USE_CATEGORY_LABEL"                
+                description="COM_RIDEOUT_USE_CATEGORY_DESCRIPTION"
+                default="0">
+                <option value="1">JYES</option>
+                <option value="0">JNO</option>
+            </field>
+            <field
+                name="ride_category_id"
+                type="category"
+                extension="com_rideout"
+                show_root="false"
+                class="inputbox"
+                label="COM_RIDEOUT_CAT_LABEL" />
+        </fieldset>
+    </fields>
+</metadata>
+    
+    
+

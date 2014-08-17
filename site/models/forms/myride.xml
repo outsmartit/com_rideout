@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<form>
+    <fieldset name="rideout-data">
+        <field
+            name="id"
+            type="text"
+            default="0" />
+			
+        <field
+            name="title"
+            type="text"
+            class="inputbox"
+            label="COM_RIDEOUT_TITLE_LABEL"
+            description="COM_RIDEOUT_TITLE_DESC"
+            size="100"
+            required="true" />
+        <field
+            name="submitter_id"
+            type="user"
+            label="COM_RIDEOUT_SUBMITTER_LABEL" />
+        <field
+            name="category_id"
+            type="category"
+            extension="com_rideout"
+            class="inputbox"
+            label="COM_RIDEOUT_CAT_LABEL" />
+        
+       
+			
+        <field
+            name="distance"
+            type="text"
+            class="inputbox"
+            label="COM_RIDEOUT_DISTANCE_LABEL"
+            description="COM_RIDEOUT_DISTANCE_DESC"
+            size="20" />    
+				
+        <field
+            name="starting_point"
+            type="text"
+            class="inputbox"
+            label="COM_RIDEOUT_STARTING_POINT_LABEL"
+            description="COM_RIDEOUT_STARTING_POINT_DESC"
+            />	
+        <field
+            name="description"
+            type="editor"
+            class="inputbox"
+            label="COM_RIDEOUT_TEXT_LABEL"
+            description="COM_RIDEOUT_TEXT_DESC"
+            filter="JComponentHelper::filterText"
+            buttons="false"
+            hide="readmore,pagebreak,image"/>	
+		
+        <field
+            name="eventdate"
+            type="calendar" 
+            label="COM_RIDEOUT_EVENTDATE_LABEL"
+            description="COM_RIDEOUT_EVENTDATE_DESC"
+            format="%Y.%m.%d %H:%M"
+            class="inputbox" 
+            size="20" />
+    </fieldset>
+</form>

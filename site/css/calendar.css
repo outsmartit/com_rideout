@@ -1,0 +1,60 @@
+/* 
+    Document   : calendar
+    Created on : Oct 29, 2013, 1:27:36 PM
+    Author     : http://www.outsmartit.be
+    Description:
+        Styling of calendar display
+*/
+.today{
+    border-style: solid;
+    border-width: 3px;
+    border-color: red;
+} .closed, .booked{
+    background-color: mistyrose;
+}
+.past{
+    background-color: darkblue;
+}
+.no_ride{
+    background-color: whitesmoke;
+}
+.a_ride{
+    text-align: center;
+    background-color: greenyellow;
+}
+.free {
+    background-color: whitesmoke;
+    text-align: center;
+}
+.free a:hover{
+    background-color: crimson;
+    color: whitesmoke;
+}
+.holiday{
+    background-color: peachpuff;
+}
+.calendar{
+    margin: 10px auto 5px;
+}
+.calendar-day-head{
+    width : 75px;
+    text-align: center;
+}
+.calendar-day{
+    text-align: center;
+}
+.month p, .month h1{
+    margin-left: 20px;   
+}
+.ridemonth {
+    font-size: 30px;
+    text-align: center;
+}
+.align-right{
+    float: right;
+}
+#details{
+    margin-top :5px;
+
+   
+}
