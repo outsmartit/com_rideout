@@ -1,8 +1,14 @@
 <?php
 /* * *****************************************************************************
  * 
- * @copyright Copyright(C)2014 Outsmartit.be. All rights reserved. 
- * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     : com_rideout
+ * @subpackage  : backend
+ * @contact     : www.outsmartit.be
+ * 
+ * @copyright   : Copyright(C)2014 www.outsmartit.be. All rights reserved. 
+ * @license     : GNU General Public License version 2 or later; see LICENSE.txt
+ * 
+ * view to import file
  * 
  */
 //no direct access

@@ -1,11 +1,11 @@
 <?php
 
 /* * *****************************************************************************
- * @package : rideout
- * @subpackage: backend
- * @single view 
+ * @package     : com_rideout
+ * @subpackage  : backend
+ * @contact     : www.outsmartit.be
  * 
- * @copyright Copyright(C)2012 Diederik. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
  */

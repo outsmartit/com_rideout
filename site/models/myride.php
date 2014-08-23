@@ -2,14 +2,14 @@
 
 /* * *****************************************************************************
  * 
- * @package : rideout
+ * @package : com_rideout
  * @subpackage : frontend
  * @author : http://wwww.outsmartit.be
  * 
- * @copyright Copyright(C)2012 bul-it bvba. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
- * MyIdea Model
+ * MyRide Model
  */
 //no direct access
 defined('_JEXEC') or die('Restricted access');
@@ -33,7 +33,6 @@ class rideoutModelMyride extends JModelForm {
             $result = $db->loadObject();
         }
         return $result;
-        //        parent::getListQuery();
     }
 
     public function getItemById($id = "") {

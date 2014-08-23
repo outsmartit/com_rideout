@@ -6,10 +6,10 @@
  * @subpackage  : frontend
  * @contact     : http://www.outsmartit.be
  * 
- * @copyright Copyright(C)2013 Diederik. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be . All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
- * Controller for submitting the edit form
+ * Controller 
  * 
  */
 defined('_JEXEC') or die('Restricted access');

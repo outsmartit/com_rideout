@@ -2,7 +2,7 @@
 
 /* * *****************************************************************************
  * 
- * @package     : rideout
+ * @package     : com_rideout
  * @subpackage  : frontend/helper
  * @contact     : wwww.outsmartit.be
  * 

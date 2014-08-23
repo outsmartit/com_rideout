@@ -1,4 +1,12 @@
 /* 
+ * @package     : com_rideout
+ * @subpackage  : frontend
+ * @contact     : http://www.outsmartit.be
+ * 
+ * @copyright Copyright(C)2014 www.outsmartit.be . All rights reserved. 
+ * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * 
+ * 
  * Ajax call to backend to fetch ride details
  */
 $(document).ready(function() {

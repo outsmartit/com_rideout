@@ -1,7 +1,7 @@
 <?php
 /*******************************************************************************
  * 
- * @package : rideout
+ * @package : com_rideout
  * @subpackage : backend
  * 
  * @copyright Copyright(C)2012 Diederik. All rights reserved. 

@@ -7,7 +7,7 @@
  * 
  * @author : http://www.outsmartit.be
  * 
- * @copyright Copyright(C)2013 bul-it bvba. All rights reserved. 
+ * @copyright Copyright(C)2013 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
  */

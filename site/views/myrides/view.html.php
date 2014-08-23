@@ -2,11 +2,11 @@
 
 /* * *****************************************************************************
  * 
- * @package : rideout
+ * @package : com_rideout
  * @subpackage : front end
  * @author : http://www.outsmartit.be
  * 
- * @copyright Copyright(C)2014 bul-it bvba. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
  * rideout - myrides view
@@ -18,6 +18,7 @@ jimport('joomla.application.component.view');
 class rideoutViewMyrides extends JViewLegacy {
 
     protected $items;
+    protected $pagination;
 
     function display($tpl = null) {
         $app = &JFactory::getApplication();
@@ -27,7 +28,7 @@ class rideoutViewMyrides extends JViewLegacy {
         $parameter1 = '';
         $parameter2 = '';
         $category_bool = 0;
-        $category=0;
+        $category = 0;
         if ($menuitemid) {
             $menuparams = $menu->getParams($menuitemid);
             $reach = $menuparams->get('reach'); // 
@@ -41,7 +42,7 @@ class rideoutViewMyrides extends JViewLegacy {
             if ($category_bool != 0) {
                 $category = $menuparams->get('ride_category_id');
             }
-            //parameter reach determines the content of the list view
+//parameter reach determines the content of the list view
         } else {
             $reach = '';
         }
@@ -50,13 +51,15 @@ class rideoutViewMyrides extends JViewLegacy {
         $this->firstday = JComponentHelper::getParams('com_rideout')->get('rideout_first_weekday');
         if (($reach == "All" || $reach == '') && $category == 0) {
             $this->items = $this->get('Items');
+            $this->state = $this->get('State');
+            $this->pagination = $this->get('Pagination');
         } else {
             $rides_model = $this->getModel("myrides");
             $data = $rides_model->getRidesList($reach, $category, $parameter1, $parameter2);
             $this->items = $data;
+            $nr_of_items = count($data);
+            $this->state = $this->get('State');
         }
-        $this->state = $this->get('State');
-        $this->pagination = $this->get('Pagination');
         parent::display($tpl);
     }
 

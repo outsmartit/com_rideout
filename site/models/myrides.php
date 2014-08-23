@@ -2,14 +2,14 @@
 
 /* * *****************************************************************************
  * 
- * @package : myIdeas
+ * @package : com_rideout
  * @subpackage : frontend
  * @author : http://wwww.outsmartit.be
  * 
- * @copyright Copyright(C)2012 bul-it bvba. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
- * model MyIdeas
+ * model MyRides
  * 
  * 
  */
@@ -103,11 +103,11 @@ class rideoutModelMyrides extends JModelList {
         $db = $this->getDbo();
         //set start & end date
         if ($reach == "Current") {
-            $startdate = $db->quote(date("Y-m-d", mktime(0,0,0,1,1,date('Y')))); //&st day of current year
-            $enddate = $db->quote(date("Y-m-d", mktime(0,0,0,12,31,date('Y')))); //last day of curent year
+            $startdate = $db->quote(date("Y-m-d", mktime(0, 0, 0, 1, 1, date('Y')))); //&st day of current year
+            $enddate = $db->quote(date("Y-m-d", mktime(0, 0, 0, 12, 31, date('Y')))); //last day of curent year
         } elseif ($reach == "Window") {
-            $startdate = $db->quote(date("Y-m-d", strtotime("-".$parameter1 ." month")));
-            $enddate = $db->quote(date("Y-m-d", strtotime("+".$parameter2." month")));
+            $startdate = $db->quote(date("Y-m-d", strtotime("-" . $parameter1 . " month")));
+            $enddate = $db->quote(date("Y-m-d", strtotime("+" . $parameter2 . " month")));
         }
         $today = $db->quote(date("Y-m-d"));
         $query = $db->getQuery(true);
@@ -135,6 +135,7 @@ class rideoutModelMyrides extends JModelList {
         } else {
             $db->setQuery($query, 0, $parameter1);
         }
+//        $mydata = $this->_getList($query, $this->getState('limitstart'), $this->getState('limit'));
         $results = $db->loadObjectList();
         return $results;
     }

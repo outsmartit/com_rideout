@@ -2,10 +2,14 @@
 
 /* * *****************************************************************************
  * 
- * @copyright Copyright(C)2012 Diederik. All rights reserved. 
- * @license GNU General Public License version 2 or later; see LICENSE.txt
+ * @package     : com_rideout
+ * @subpackage  : backend
+ * @contact     : www.outsmartit.be
  * 
- * My Ideas Model
+ * @copyright   : Copyright(C)2014 www.outsmartit.be. All rights reserved. 
+ * @license     : GNU General Public License version 2 or later; see LICENSE.txt
+ * 
+ * MyRides Model
  */
 //no direct access
 defined('_JEXEC') or die('Restricted access');

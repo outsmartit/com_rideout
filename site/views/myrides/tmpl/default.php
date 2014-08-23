@@ -1,11 +1,11 @@
 <?php
 /* * *****************************************************************************
  * 
- * @package : rideout
+ * @package : com_rideout
  * @subpackage : frontend 
  * @author : http://wwww.outsmartit.be
  * 
- * @copyright Copyright(C)2013 bul-it bvba. All rights reserved. 
+ * @copyright Copyright(C)2014 www.outsmartit.be. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
  * List view myRides
@@ -57,7 +57,8 @@ $listDirn = $this->state->get('list.direction');
     </table><br/>
     <form action="<?php echo JRoute::_('index.php?option=com_rideout&view=myrides'); ?>"
           method="post" name="adminForm" id="adminForm">
-        <?php echo $this->pagination->getListFooter(); ?>
+        <?php if($this->pagination){
+        echo $this->pagination->getListFooter();} ?>
         <input type="hidden" name="task" value="" />
         <input type="hidden" name="option" value="com_rideout" />
         <input type="hidden" name="filter_order" value="<?php echo $listOrder; ?>" />

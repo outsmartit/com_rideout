@@ -2,7 +2,7 @@
 <!--
 ** *****************************************************************************
  * 
- * @package     : rideout
+ * @package     : com_rideout
  * @subpackage  : frontend view
  * @contact     : www.outsmartit.be
  * 
@@ -11,8 +11,6 @@
  * 
  *
 -->
-
-
 <metadata> 
 <layout title="Calendar view of Bike rides"></layout>
 </metadata>

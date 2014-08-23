@@ -2,14 +2,14 @@
 
 /* * *****************************************************************************
  * 
- * @package     : rideout
+ * @package     : com_rideout
  * @subpackage  : backend
  * @contact     : info@outsmartit.be
  * 
  * @copyright Copyright(C)2014 Diederik. All rights reserved. 
  * @license GNU General Public License version 2 or later; see LICENSE.txt
  * 
- * field definition for services in booking form
+ * field definition for separate time format
  * 
  */
 defined('_JEXEC') or die('Restricted access');
