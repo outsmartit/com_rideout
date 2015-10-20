@@ -7,7 +7,7 @@
     <authorUrl>http://www.outsmartit.be</authorUrl>
     <copyright>Copyright 2014 http://www.outsmartit.be</copyright>
     <license>GNU/GPL</license>
-    <version>0.2</version>
+    <version>0.3</version>
     <description>COM_RIDEOUT_XML_DESCRIPTION</description>
     <install>
         <sql>
@@ -34,8 +34,10 @@
     </files>
     <languages folder="site">
         <language tag="en-GB">language/en-GB/en-GB.com_rideout.ini</language>
+		<language tag="nl-NL">language/nl-NL/nl-NL.com_rideout.ini</language>
     </languages>
     <administration>
+        <menu>COM_RIDEOUT</menu>
         <submenu>
             <menu link="option=com_categories&amp;extension=com_rideout"
                   view="categories" alt="rideout/Categories">Categories

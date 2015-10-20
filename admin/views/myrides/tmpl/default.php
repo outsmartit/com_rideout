@@ -45,7 +45,7 @@ $listDirn = $this->state->get('list.direction');
         <thead>
             <tr>
                 <th class="span1">
-                    <input type="checkbox" name="checkall-toggle" value="" onclick="checkAll(this)" />
+                    <input type="checkbox" name="checkall-toggle" value="" onclick="Joomla.checkAll(this)" />
                 </th>
                 <th class="span3">
                     <?php echo JHtml::_('grid.sort', 'COM_RIDEOUT_TITLE', 'title', $listDirn, $listOrder); ?></th>

@@ -23,9 +23,10 @@
             name="category_id"
             type="category"
             extension="com_rideout"
-            default=""
             class="inputbox"
-            label="COM_RIDEOUT_CAT_LABEL" />
+            label="COM_RIDEOUT_CAT_LABEL" >
+            <option value="-1">-please select</option>
+        </field>
 			
         <field
             name="distance"

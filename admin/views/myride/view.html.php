@@ -20,7 +20,7 @@ class rideoutViewMyride extends JViewLegacy{
     protected $form;
     
     public function display($tpl = null) {      
-        $app = &JFactory::getApplication();
+        $app = JFactory::getApplication();
         $app->input->set('hidemainmenu',true);
         $this->unit = JComponentHelper::getParams('com_rideout')->get('rideout_unit');
         $this->form = $this->get('Form');

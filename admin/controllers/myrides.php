@@ -28,6 +28,7 @@ class rideoutControllerMyrides extends JControllerAdmin {
     }
 
     public function uploadcsv() {
+        $output=null;
         $sequence = array('title', 'starting_point', 'eventdate', 'distance', 'category_id', '');
         jimport('joomla.filesystem.file');
         //       $ridesmodel = $this->getModel();
@@ -52,7 +53,7 @@ class rideoutControllerMyrides extends JControllerAdmin {
                     $i++;
                 }
                 $resultsave = $ridesmodel->save($data);
-                $output = $data['title']." : ";
+                $output .= $data['title']." : ";
                 if ($resultsave==1){
                      $output = $output. "ok";
                 } else {

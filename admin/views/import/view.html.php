@@ -20,7 +20,7 @@ class rideoutViewImport extends JViewLegacy {
     protected $form;
 
     public function display($tpl = null) {
-        $app = &JFactory::getApplication();
+        $app = JFactory::getApplication();
         $this->addToolbar();
         parent::display($tpl);
     }

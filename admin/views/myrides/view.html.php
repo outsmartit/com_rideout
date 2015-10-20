@@ -19,7 +19,7 @@ class rideoutViewMyrides extends JViewLegacy {
     protected $items;
 
     public function display($tpl = null) {
-        $app = &JFactory::getApplication();
+      //  $app = &JFactory::getApplication();
         $this->unit = JComponentHelper::getParams('com_rideout')->get('rideout_unit');
         $this->addToolbar();
         $this->items = $this->get('Items');
