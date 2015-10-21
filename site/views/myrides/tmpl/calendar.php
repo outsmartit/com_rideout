@@ -36,12 +36,12 @@ $document->addScript('//code.jquery.com/jquery-latest.min.js');
 
         $prev_date = $mydate - $nr;
         if ($prev_date <= 0) {
-            $prev_date = 12 - $prev_date;
-            $year = $currentYear - 1;
+            $prev_date = 12 + $prev_date;
+            $prev_year = $currentYear - 1;
         } else {
-            $year = $currentYear;
+            $prev_year = $currentYear;
         }
-        $previous_link = $prev_date . '&year=' . $year;
+        $previous_link = $prev_date . '&year=' . $prev_year;
         //echo '<a href="' . JRoute::_('index.php?option=com_rideout&view=myrides&layout=calendar&month=') . $prev_date . '&year='.$year.'">' . JText::_("COM_RIDEOUT_PREVIOUS_MONTH") . '</a>';
         echo '<div class="ridemonth">' . date("F", mktime(0, 0, 0, $mydate, 1, $currentYear)) . '</div>';
         echo draw_calendar($mydate, $currentYear, $ridesmodel);
@@ -54,7 +54,7 @@ $document->addScript('//code.jquery.com/jquery-latest.min.js');
                 $currentYear++;
             }
             $mydate++;
-            echo date("F", mktime(0, 0, 0, $mydate, 1, $currentYear));
+            echo '<div class="ridemonth">' . date("F", mktime(0, 0, 0, $mydate, 1, $currentYear)). '</div>';
             echo draw_calendar($mydate, $currentYear, $ridesmodel);
 
             echo '</p><br/>';
@@ -62,8 +62,9 @@ $document->addScript('//code.jquery.com/jquery-latest.min.js');
         $linkmonth = $mydate + 1;
         if ($linkmonth == 13) {
             $linkmonth = 1;
-            $year = $year + 1;
-        }
+            $year = $currentYear + 1;
+        }else
+            $year = $currentYear;
         echo '<a href="' . JRoute::_('index.php?option=com_rideout&view=myrides&layout=calendar&month=') . $previous_link . '" class="align-left">' . JText::_("COM_RIDEOUT_PREVIOUS_MONTH") . '</a>';
         echo '<a href="' . JRoute::_('index.php?option=com_rideout&view=myrides&layout=calendar&month=') . $linkmonth . '&year=' . $year . '" class="align-right">' . JText::_("COM_RIDEOUT_NEXT_MONTH") . '</a>'
         ?>

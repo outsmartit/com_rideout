@@ -21,10 +21,10 @@ class rideoutViewMyrides extends JViewLegacy {
     protected $pagination;
 
     function display($tpl = null) {
-        $app = &JFactory::getApplication();
+        $app = JFactory::getApplication();
         $input = $app->input;
         $menuitemid = $input->getInt('Itemid');  // this returns the menu id number so you can reference parameters
-        $menu = JSite::getMenu();
+        $menu = $app->getMenu();
         $parameter1 = '';
         $parameter2 = '';
         $category_bool = 0;
@@ -46,7 +46,8 @@ class rideoutViewMyrides extends JViewLegacy {
         } else {
             $reach = '';
         }
-        $this->anotherfirst = JLanguage::getFirstDay();
+        
+        $this->anotherfirst = JFactory::getLanguage()->getFirstDay();
         $this->nr_of_months = JComponentHelper::getParams('com_rideout')->get('rideout_nr_of_months');
         $this->firstday = JComponentHelper::getParams('com_rideout')->get('rideout_first_weekday');
         if (($reach == "All" || $reach == '') && $category == 0) {
